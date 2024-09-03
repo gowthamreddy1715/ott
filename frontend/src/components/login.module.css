@@ -1,0 +1,157 @@
+/* login.css */
+
+/* Styles specific to the login page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  width: 40%;
+  margin-left: 30%;
+  height: 30%;
+  margin-top: 5%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-card {
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+.login-container .right {
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container button {
+  width: calc(100% - 20px);
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  outline: none;
+  border-color: orangered;
+}
+
+.login-container button {
+  width: 100%;  
+  background-color:rgb(231, 67, 8);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login-container button:hover {
+  background-color: orangered;
+  transform: scale(1.05);
+}
+
+.login-container .forgot-password-link {
+  display: inline-block;
+  width: 50%;
+  margin-top: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-container .forgot-password-link:hover {
+  color: #333;
+}
+
+.login-container .new-user {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 25px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.login-container .new-user a {
+  text-decoration: none;
+  color: orangered;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.login-container .new-user a:hover {
+  color: orangered;
+}
+
+.login-container .new-user a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 5px;
+ 
+  opacity: 0.3;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.error-message {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ff0000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3%;
+  background-color: #ffe6e6;
+  border: 1px solid #ff9999;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+  animation: fadeIn 1s ease; /* Apply the animation */
+}

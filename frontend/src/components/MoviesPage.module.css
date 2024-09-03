@@ -1,0 +1,53 @@
+.movies2Container {
+  display: flex;
+  justify-content: center;
+}
+
+.movies2Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  max-width: 85%;
+  margin:10px
+
+ 
+  
+
+}
+
+.movies2card {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.movies2card:hover {
+  transform: scale(1.05);
+}
+
+.movies2imgbox {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  height: 200px; /* Set a fixed height for the image box */
+}
+
+.movies2imgbox img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+
+}
+
+.movies2content {
+  padding: 15px;
+}
+
+.movies2content h2 {
+  margin: 0;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 18px;
+}
+

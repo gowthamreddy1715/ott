@@ -1,0 +1,82 @@
+.container {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #ff5733; /* ZEE5 Orange */
+  }
+  
+  /* Style the cards container */
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Style the wide plan card */
+  .planCard {
+    background-color: #333; /* Dark gray background color */
+    color: #fff;
+    width: 70%; /* Adjust the width as needed to take more than half of the page */
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s; /* Add a smooth transition for the zoom effect */
+  }
+  
+  /* Card borders cut shape */
+  .planCard::before,
+  .planCard::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border: 2px solid #ff5733; /* ZEE5 Orange */
+    z-index: 1;
+  }
+  
+  .planCard::before {
+    left: -2px;
+    top: -2px;
+    border-right: none;
+    border-bottom: none;
+    transform: scaleY(0);
+  }
+  
+  .planCard::after {
+    right: -2px;
+    bottom: -2px;
+    border-left: none;
+    border-top: none;
+    transform: scaleY(0);
+  }
+  
+  /* Card content */
+  .planCard .planDetails {
+    margin-bottom: 20px;
+    /* Add your styles for card content here */
+  }
+  
+  /* Style the subscribe button */
+  .subscribeButton {
+    background-color: #ff5733; /* ZEE5 Orange */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .subscribeButton:hover {
+    background-color: green; /* Slightly darker orange on hover */
+  }
+  
+  /* Zoom-in effect on hover */
+  .planCard:hover {
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,76 @@
+/* FileUpload.css */
+
+
+.fileuploadcontainer {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.movieh {
+  color: orangered;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fileinputcontainer {
+  margin-bottom: 20px;
+}
+
+.labup {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="datetime-local"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.selup {
+  appearance: none;
+  padding-right: 25px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAACFCAMAAABCBMsOAAAANlBMVEX///8AAACOjo7T09Pe3t4rKyvX19cuLi7b29sICAjm5uYEBAQeHh7i4uInJyeLi4tRUVH19fWuoVnVAAABB0lEQVR4nO3WCw6CMBBF0SKfUiig+9+skGq0SoGaTonJPSt4YTrzUAoAAAAAAAAAAAAA/tU0XeJNU+IU5VjEG8vEKVRjo0PYJnUIpYbYEGZIH0Kpto4KoVuJEJFvoxYYh1P1J4/jEePo1xgruRDzUI69jTr5ivraQymEHuZLt383bCcdYj5feieEFtsOL4bZDGGyhJiHsrWwfYZxOBtDyTMOpww9USu8or5QtQlezDWr1VaL34lPK9WW/qdm31e19aLdEYzhfw3ZAgvzqk26wMLeqy37w3wZnnfDZl5RX+muqD5tHE6zbEqf8Wyv60xhshVYWHM9/UssbmcHAAAAAAAAAAAAwG/uhtIGkds4zuMAAAAASUVORK5CYII=') no-repeat right #fff;
+  background-size: 20px;
+  width: 103%;
+}
+
+.upload {
+  background-color: orangered;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 35%;
+  width: 30%;
+}
+
+/* .upload:hover {
+  background-color: orangered;
+} */
+
+.uppcl {
+  margin-top: 20px;
+  color: #e74c3c;
+  text-align: center;
+}
+
+.movie {
+  text-align: center;
+  color: black;
+}

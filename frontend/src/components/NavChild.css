@@ -1,0 +1,123 @@
+/* Apply some basic styling to the navbar */
+header {
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  /* Remove justify-content: space-between; */
+  padding: 0 20px;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* Adjust the margin-left property to align the nav items to the left */
+  margin-left: 10px;
+}
+
+.nav-item {
+  margin-right: 10px;
+  margin-left: 10px; /* Adjust the spacing between nav items as needed */
+}
+
+.align-right {
+  margin-left: auto; /* Align the .align-right div to the right */
+}
+
+/* Increase the size of all icons */
+.nav-item span {
+  font-size: 20px; /* Adjust the font-size as needed */
+}
+
+/* Apply styling to the main content */
+.notification-icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block; /* Display as inline block so that the container doesn't span full width */
+}
+
+.notification-container {
+  position: absolute;
+ 
+  right: 0;
+  transform: translateY(0px); /* Adjust as needed */
+  max-height: 300px; /* Decrease the max-height as needed */
+  overflow-y: auto;
+  background-color: slategray;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid slategray;
+  z-index: 1;
+  padding: 10px;
+}
+
+.notification-card {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid slategray;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  background-color: burlywood;
+}
+
+.notification-card:hover {
+  background-color: rgb(177, 178, 180); /* Light blue for hover effect */
+  transform: scale(1.03); /* Add a subtle scale effect on hover */
+}
+
+.thumbnail {
+  width: 100px; /* Decrease the width as needed */
+  height: 70px; /* Decrease the height as needed */
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.notification-details {
+  flex: 1;
+}
+
+.notification-details h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.notification-details p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* Style for the bell icon */
+.notification-icon svg {
+  font-size: 30px; /* Adjust as needed */
+  color: slategray; /* Adjust as needed */
+}
+
+.notification-icon:hover svg {
+  color: slategray; /* Adjust as needed */
+}
+
+.home-container {
+  position: relative;
+}
+
+/* Additional styles for other elements on your page... */
+/* Add these styles to your existing stylesheet or create a new one */
+
+a {
+  color: white;
+  text-decoration: none; /* Remove underlines from links if you prefer */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underlines on hover if desired */
+}

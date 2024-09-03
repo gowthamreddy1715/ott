@@ -1,0 +1,31 @@
+.successMessageContainer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f8f1;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+    margin-left: 280px;
+    margin-right: 250px;
+  }
+  
+  .successMessageContainer p {
+    margin: 10px 0;
+    color: #3498db;
+  }
+  
+  .startWatchingButton {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .startWatchingButton:hover {
+    background-color: #2980b9;
+  }

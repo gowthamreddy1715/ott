@@ -1,0 +1,226 @@
+/* Styles for Slider Container */
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.sliderContainer button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+/* Styles for Movie Container */
+.container {
+  display: flex;
+  gap: 100px 50px;
+  padding: 100px 0;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 250px;
+  max-width: 100%;
+  height: 200px;
+  background: black;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  margin-right: 20px;
+  margin-top: -100px;
+  margin-bottom: -100px;
+}
+
+.container .card:hover {
+  height: 300px;
+  cursor: pointer;
+}
+
+.container .card .imgBox {
+  position: absolute;
+  top: 10px;
+  width: 210px;
+  height: 120px;
+  background: #333;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBox {
+  top: -50px;
+  transform: scale(0.75);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .content {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  height: 35px;
+  padding: 0 30px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover .content {
+  top: 90px;
+  height: 250px;
+}
+
+.container .card .content h2 {
+  font-size: 0.9rem;
+  color: var(--clr);
+  margin-top: -3px;
+  color: grey;
+  font-weight: 900;
+  text-align: center;
+}
+
+.container .card .content p {
+  padding: 15px;
+  max-height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.container .card .content a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  background: var(--clr);
+  color: white;
+  font-weight: 500;
+}
+
+.container .card .content a:hover {
+  opacity: 0.8;
+}
+
+.container .card .content .buttonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.container .card .content button.playButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-bottom: 35%;
+}
+
+.container .card .content button.watchlistIcon {
+  padding: 6px 20px;
+  font-size: 1rem;
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.container .card .content button.playButton:hover,
+.container .card .content button.watchlistIcon:hover {
+  background-color: orangered;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+/* Styles for Arrows */
+.arrow,
+.arrow2 {
+  background-color: transparent;
+  color: azure;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  outline: none;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.arrow:hover,
+.arrow2:hover {
+  opacity: 1;
+}
+
+.arrow {
+  left: 2%;
+}
+
+.arrow2 {
+  right: 18%;
+}
+
+@media (max-width: 480px) {
+  .container .card {
+    width: 230px;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+
+  .container .card .imgBox {
+    width: 185px;
+    border-radius: 10px;
+  }
+
+  .container .card .content p {
+    font-size: 0.8rem;
+  }
+
+  .container .card .content a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ensure this rule is not overridden by subsequent rules */
+.genretitle {
+  color: white;
+  text-align: left;
+  margin-left: 10px;
+  text-decoration: none !important;
+}
+
+.movietitle {
+  color: white;
+}
+
+.moviedesc {
+  font-weight: bold;
+}
+
+.genrelink {
+  text-decoration: none;
+}

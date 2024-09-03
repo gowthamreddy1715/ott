@@ -1,0 +1,180 @@
+.profilesContainer {
+  background-color: black;
+}
+ 
+ 
+.profiles .profile-info:hover .lock-icon {
+  opacity: 1;
+  filter: brightness(1.5); /* Adjust brightness for highlighting effect */
+}
+ 
+ 
+.profileinfo{
+ color: black;
+ 
+}
+ 
+.profiles ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+ 
+.profiles {
+  margin-left: 27%;
+  /* text-align: center;  */
+}
+ 
+ 
+.profiles h2 {
+  font-size: 35px;
+  margin-left:13%; /* Adjust the font size to your desired value */
+  color: white;
+}
+ 
+.profiles li {
+  margin: 10px;
+  padding: 10px;
+  flex: 1 1 200px; /* Adjust the width of each profile item */
+  max-width: 200px; /* Maximum width for each profile item */
+  margin-left: -2%;
+}
+ 
+  
+.profileinfo p {
+  font-size: 1.2em; /* Set the font size for the profile name */
+  font-weight: bold; /* Make the profile name bold */
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+  margin-bottom: 5px; /* Add some space below the profile name */
+  position: relative;
+  color:whitesmoke;
+  
+  
+}
+ 
+.profiles .profileinfo {
+  position: relative;
+  color: white;
+}
+ 
+ 
+.profiles .lockicon {
+  position: absolute;
+  top: 150%;                                                                                                                                                          
+  left: 30%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hide the lock icon */
+  transition: opacity 0.3s ease;
+  color: orangered;
+}
+ 
+ 
+.profiles .editpro {
+  position: absolute;
+  top: 85%; /* Adjust the vertical position as needed */
+  left: 85%; /* Adjust the horizontal position as needed */
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hide the icons */
+  transition: opacity 0.3s ease;
+  color: whitesmoke;
+
+}
+ 
+ 
+.profiles .profileinfo:hover .lockicon,
+.profiles .profileinfo:hover .editpro {
+  opacity: 1; /* Show the icons when hovering over the profile */
+}
+ 
+ 
+.profiles .editpro {
+  background: orangered;
+  color: whitesmoke;
+  padding: 2px 2px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+ 
+ 
+.profiles .pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+ 
+ 
+
+ 
+ 
+/* Add this to your existing styles */
+.profilesList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8%;
+
+}
+
+
+
+
+.profilesList .profileItem{
+  margin-left: 6%;
+}
+ 
+.addprofilebuttonDynamic {
+  margin-top: 10px; /* Adjust the vertical margin as needed */
+  margin-left: 10px; /* Adjust the horizontal margin as needed */
+
+}
+ 
+ 
+
+ 
+.addprofilebutton svg {
+  font-size: 50px;
+}
+
+.profiles .profileinfo p {
+  text-align: center; 
+}
+
+
+.profiles img:hover{
+  border: 2px solid orangered;
+}
+
+.addProfileButtonDynamic:hover{
+  border: 3px solid orangered;
+
+  background-color: white;
+  color: black;
+}
+
+.addProfileButtonDynamic{
+  margin-top: 8%;
+  margin-left: 5%;
+  padding: 1%;
+  color: black;
+  background: white;
+  
+
+  height: 5%;
+}
+
+
+ 
+.profiles li p {
+  /* Style for the profile names within list items */
+  font-size: 18px; /* Change the font size to your desired value */
+  /* Additional styles as needed */
+}
+
+
+.errormessage {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}

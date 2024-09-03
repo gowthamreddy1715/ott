@@ -1,0 +1,8 @@
+git init
+git remote add origin https://github.com/MAHESHAIML/REALM.git
+
+1)To overcome larger video files issues we kept aside uploads folder and public/videos folders
+
+2) Paste uploads folder in backend ( C:\Users\USER\Desktop\react_19-12-2023\backend )
+3) Paste videos folder in frontend ( C:\Users\USER\Desktop\react_19-12-2023\frontend\public )
+4) These two folders are available in external device 

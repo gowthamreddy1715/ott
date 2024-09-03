@@ -1,0 +1,148 @@
+/* Hovervideo.module.css */
+
+.volumeoff {
+  /* Styles for the muted icon */
+  transition: color 0.3s, background-color 0.3s; /* Add smooth transition */
+}
+
+.volumeon {
+  /* Styles for the unmuted icon */
+  transition: color 0.3s, font-weight 0.3s; /* Add smooth transition */
+}
+
+
+.volumeoff:hover {
+  color: orangered;
+ 
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transform: scale(1.2); /* Blowing animation */
+}
+
+.volumeon:hover {
+  color: orangered;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  transform: scale(1.2); /* Blowing animation */
+}
+
+.playButton {
+  font-size: 3em;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: orangered;
+  border: 2px solid transparent; /* or border: 0; */
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.playButton:hover {
+  color: orangered;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+
+  border: 2px solid white;
+}
+
+.infoButton {
+  font-size: 3em;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: orangered;
+  border: 2px solid transparent; /* or border: 0; */
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.infoButton:hover {
+  color: orangered;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+
+  border: 2px solid white;
+}
+
+
+/* Hovervideo.module.css */
+
+.title {
+margin: 0;
+font-size: 5em;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+font-size: 1.2em;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+width: 450px;
+margin-bottom: 50px;
+color: white;
+font-weight: bold;
+}
+
+
+
+.title::first-letter{
+color: orangered;
+font-size: 65px;
+}
+
+
+.popupcontainer {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 85%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 999;
+
+
+}
+
+
+.popupcontainer p {
+color: aliceblue;
+font-size: 1.2em;
+text-align: justify;
+text-justify: inter-word;
+margin: 10px;
+}
+
+
+.popupcontent {
+color: white;
+background: rgba(0, 0, 0, 0.8);
+padding: 20px;
+max-width: 800px;
+width: 80%;
+max-height: 80%;
+overflow-y: auto;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
+}
+
+
+.popuptitle {
+font-size: 1.8em;
+margin-bottom: 10px;
+color: orangered;
+}
+
+.popupdescription {
+font-size: 1.4em;
+margin-bottom: 20px;
+}
+
+.popupbutton {
+background-color: orangered;
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 1em;
+cursor: pointer;
+
+}

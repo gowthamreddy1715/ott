@@ -1,0 +1,249 @@
+.videocontainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.videolist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns grid */
+  gap: 20px;
+  padding: 20px 0;
+  transition: transform 0.5s ease;
+}
+
+.videoitem {
+  position: relative;
+  background: black;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  height: 250px; /* Initially set height */
+}
+
+.videoitem:hover {
+  height: 200px;
+  cursor: pointer;
+}
+
+.videothumbnailcontainer {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  background: #333;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.videoitem:hover .videothumbnailcontainer {
+  top: -50px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.videothumbnailcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videotitle {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 0 30px;
+  margin-left: 24%;
+  margin-bottom: 8%;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.videoitem:hover .videotitle {
+  top: 10%;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.videotitle h3 {
+  /* font-size: 0.6rem; */
+  color: grey;
+  font-weight: 900;
+  text-align: center;
+  font-size: 30px;
+}
+.removeButton,
+.playButton {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 5%;
+  opacity: 0;
+  height: 40px; /* Adjust height as needed */
+  width: 40px;  /* Adjust width as needed */
+  font-size: 1rem; /* Set font size explicitly */
+}
+
+/* ... existing styles ... */
+
+/* Adjusted margin for spacing */
+.playButton {
+  left: 35%;
+  margin-right: 5%; /* Increase the margin-right for spacing */
+  transform: translateX(-50%);
+  font-size: 1.5rem; /* Set font size explicitly */
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+height: 45px;
+padding-bottom: 5%;
+  background-color: orangered;
+  border: 2px solid transparent;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Adjust spacing */
+.removeButton {
+  right: 40%; /* Adjusted from 5% */
+  height: 45px;
+  transform: translateX(50%); /* Adjusted from translateX(-50%) */
+  font-size: 1.5rem; /* Set font size explicitly */
+  color: white;
+ 
+  cursor: pointer;
+  background-color: orangered;
+  border: 2px solid transparent;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  margin-bottom: 4%;
+}
+
+/* ... existing styles ... */
+
+
+
+.playButton:hover {
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+
+  border: 2px solid white;
+}
+
+.removeButton:hover {
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+
+  border: 2px solid white;
+}
+
+
+
+
+
+
+
+.videoitem:hover .removeButton,
+.videoitem:hover .playButton {
+  opacity: 1;
+ 
+
+}
+
+.removeButton {
+  background-color: orangered;
+
+}
+
+.playButton {
+  background-color: orangered;
+  
+ 
+}
+
+.playIcon{
+  margin-top: 20%;
+
+}
+
+.confirmationPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+background-color: #333;
+  padding: 20px;
+  border: 2px solid white; /* Red border color */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.confirmationPopup p {
+  color: white; /* Red text color */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+
+.confirmationPopup button {
+  background-color:rgb(224, 80, 27); /* Red background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 18%;
+  margin-right: 10px;
+}
+
+.confirmationPopup button:hover {
+  background-color:orangered; /* Darker red color on hover */
+}
+
+.removeIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.removeIconContainer {
+  margin-bottom: 0px; 
+}
+
+
+.removeText {
+  font-size: 0.8rem; 
+  position: absolute;
+  bottom: -30px; 
+  color: orangered;
+}
+
+
+
+@media (max-width: 480px) {
+  .videoitem {
+    width: 100%;
+    border-radius: 15px;
+    margin-right: 0;
+  }
+
+  .videothumbnailcontainer {
+    width: 100%;
+  }
+
+  .videotitle h3 {
+    font-size: 0.8rem;
+  }
+
+  .removeButton,
+  .playButton {
+    font-size: 0.9rem;
+  }
+}

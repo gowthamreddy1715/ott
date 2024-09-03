@@ -1,0 +1,93 @@
+/* PinPage.css */
+
+/* Style for the container holding the pin page */
+.pin-page-container {
+  max-width: 400px;
+  margin: 8% auto 0;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the input fields */
+.pin-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pin-input-container input {
+  width: 50px;
+  height: 30px;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.pin-input-container input:hover{
+  border: 2px solid orangered;
+}
+
+/* Style for the Submit button */
+.pin-page-container button {
+  display: block;
+  width: 50%;
+  padding: 12px;
+  margin-top: 20px;
+  margin-left: 25%;
+  border: none;
+  border-radius: 8px;
+  background-color: orangered;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pin-page-container button:hover {
+  background-color:orangered;
+}
+
+/* Style for the heading */
+.pin-page-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  margin-left: 25%;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.error-message {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ff0000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3%;
+  background-color: #ffe6e6;
+  border: 1px solid #ff9999;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+  animation: fadeIn 1s ease; /* Apply the animation */
+}

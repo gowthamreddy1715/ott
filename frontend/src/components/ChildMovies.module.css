@@ -1,0 +1,58 @@
+.childMovies {
+    background-color: black; /* Set background color for the entire component */
+    min-height: 100vh;
+  }
+ 
+  .childMoviesContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px; /* Add border-radius for curved edges */
+    overflow: hidden; /* Ensure that curved edges are respected */
+  }
+ 
+  .childMoviesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+ 
+  .childMoviesCard {
+    text-decoration: none;
+    color: inherit;
+    
+  color: white;
+  text-align: center;
+    border-radius: 10px; /* Increased border radius for a smoother look */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: calc(33.3333% - 20px); /* Adjusted width for three cards in a line with gaps */
+    margin-bottom: 20px;
+  }
+ 
+  .childMoviesCard:hover {
+    transform: scale(1.1); /* Increased scale on hover */
+  }
+ 
+  .childMoviesImgBox {
+    width: 100%;
+    height: 200px; /* Increased thumbnail height */
+    overflow: hidden;
+    border-radius: 10px 10px 0 0; /* Increased border radius */
+  }
+ 
+  .childMoviesImgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  .childMoviesContent {
+    padding: 15px; /* Increased padding */
+  }
+ 
+  .childMoviesContent h2 {
+    margin-bottom: 5px; /* Adjusted margin for the title */
+    text-decoration: none; /* Removed underline for the title */
+  }
+ 

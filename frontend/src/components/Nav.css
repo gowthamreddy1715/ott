@@ -1,0 +1,225 @@
+/* Nav.css */
+.nav-navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 35px;}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.nav-nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.nav-nav-item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav-nav-item:hover {
+  color: orangered; /* Change to the desired color on hover */
+}
+
+.nav-nav-item:hover .nav-search-icon {
+  color: orangered;
+}
+
+.nav-nav-item:hover .notification-icon {
+  color: orangered;
+}
+.nav-nav-item:hover .nav-profile-icon {
+  color: orangered;
+}
+
+.nav-align-right {
+  margin-left: auto;
+}
+
+.nav-nav-item span {
+  font-size: 20px;
+  color: white; /* Set icon color */
+}
+
+
+.notification-icon,
+.nav-search-icon,
+.nav-profile-icon {
+  cursor: pointer;
+  position: relative;
+  color: white; /* Set icon color */
+  display: inline-block;
+  font-size: larger;
+  padding: 0 10px; /* Adjust padding as needed */
+  transition: color 0.3s;
+}
+
+
+.nav-search-icon,
+.nav-profile-icon{
+margin-top: 10%;
+}
+
+.nav-search-icon{
+  margin-top: 18%;
+}
+
+.nav-profile-icon{
+ 
+  border-radius: 50%;
+  padding: 5%;
+}
+
+.notification-icon:hover,
+.nav-nav-item:hover .notification-icon {
+  color: orangered; /* Change to the desired color on hover */
+}
+
+.notification-icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block; /* Display as inline block so that the container doesn't span full width */
+ margin-top: 3%;
+}
+
+.notification-container {
+  position: absolute;
+  right: 0;
+  transform: translateY(0px); /* Adjust as needed */
+  max-height: 400px; /* Decrease the max-height as needed */
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value for transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid black;
+  z-index: 1;
+  padding: 10px;
+  margin-top: 30%;
+}
+.notification-card {
+  display: flex;
+  width: 400px; /* Set the desired width */
+  padding: 10px;
+  border-bottom: 1px solid black;
+  background-color: rgba(13, 13, 13, 0.7);
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+
+.notification-card:hover {
+  background-color:  rgba(128, 121, 121, 0.7); /* Adjust the alpha value for transparency on hover */
+  transform: scale(1.03); /* Add a subtle scale effect on hover */
+}
+
+.thumbnail {
+  width: 100px; /* Decrease the width as needed */
+  height: 70px; /* Decrease the height as needed */
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.notification-details {
+  flex: 1;
+}
+
+.notification-details h3 {
+  margin-bottom: 8px;
+  color: white;
+}
+
+.notification-details p {
+  margin: 4px 0;
+  color: white;
+}
+
+
+/* Style for the bell icon */
+.notification-icon svg {
+  font-size: 30px; /* Adjust as needed */
+  color: whitesmoke; /* Adjust as needed */
+}
+
+.notification-icon:hover svg {
+  color: orangered; /* Adjust as needed */
+}
+
+.nav-container {
+  position: relative;
+}
+
+.nav-container a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-container a:hover {
+  color: orangered;
+}
+.nav-unseen-count {
+  font-size: 7px; /* Adjust the font-size as needed */
+  color: rgb(255, 255, 255); /* Set text color */
+  padding: 2px 4px; /* Adjust padding as needed */
+  border-radius: 50%; /* Make it a circle */
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.nav-profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid slategray;
+  z-index: 2;
+  padding: 10px;
+  display: none;
+  width: 200px;
+}
+
+.nav-profile-icon:hover .nav-profile-dropdown {
+  display: block;
+}
+
+.nav-dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+  color: black;
+}
+
+.nav-dropdown-item:hover {
+  background-color: grey;
+  /* font-weight: bold; */
+}
+.nav-dropdown-item-icon {
+  margin-right: 8px; /* Adjust the margin as needed */
+}
+
+.nav-dropdown-item-label {
+  margin-left: 4px; /* Adjust the margin as needed */
+}
+
+
+.nav-profile-name{
+  margin-left: 42%;
+  font-weight: bold;
+
+}
+
+.nav-profile-name::first-letter{
+
+  font-size: 30px;
+}

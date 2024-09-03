@@ -1,0 +1,190 @@
+/* Movie container */
+.movie-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Movie background image */
+.movie-background-image {
+  width: 100%;
+  height: 300px; /* Set desired height */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  z-index: 2; /* Adjust the z-index to make sure it's above the overlay */
+}
+
+/* Movie image container */
+.movie-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120%;
+}
+
+/* Movie image */
+.movie-image {
+  width: 100%;
+  max-width: 100%;
+  height: 230%;
+  border-radius: 5px;
+}
+
+/* Gradient overlay */
+.movie-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%; /* Adjusted height for the overlay */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Adjusted color intensity */
+}
+
+/* Movie information container */
+.movie-info-container {
+  position: absolute;
+  
+  color: #fff;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+/* Movie title */
+.movie-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 20%;
+  text-align: left;
+  margin-left: 5%;
+}
+
+
+
+/* Movie description */
+.movie-description {
+  font-size: 20px;
+  color: white;
+  max-width: 50%;
+  margin-left: 5%;
+  float: left;
+  text-align: left;
+  
+}
+
+/* Movie buttons */
+.movie-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  
+  
+  
+}
+
+/* Play button */
+.movie-play-button,
+.movie-watchlist-button {
+ 
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: orangered;
+  border: 2px solid transparent; /* Add a transparent border */
+  margin-bottom: 60px;
+  margin-left: 1.5%;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add border-color transition */
+  margin-top: 100px;
+}
+
+/* Play button positioning */
+.movie-play-button {
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-left: 5%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+
+
+
+/* Hover effect for buttons */
+.movie-play-button:hover {
+  background-color: orangered;
+  color: white;
+  border-color: #fff; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+}
+
+.movie-watchlist-button:hover{
+  background-color: orangered;
+  color: white;
+
+  border-color: #fff; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+}
+
+
+.added-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 1.2em;
+  color: green;
+}
+
+.logorealm {
+  position: absolute;
+  top: 10px;
+  left: 5%;
+  z-index: 3;
+}
+
+.playicon {
+  font-size: 35px !important; /* Set the desired font size */
+  color:white; /* Set the desired icon color */
+  background-color: transparent;
+  /* Add any additional styles you want for the PlayArrowIcon */
+}
+.watchlist-icon{
+  font-size: 35px !important; /* Set the desired font size */
+  color:white; /* Set the desired icon color */
+  padding-left: 0;
+}
+
+.playicon:hover{
+  color: white;
+}
+.watchlist-icon:hover{
+  color: white;
+}
+
+

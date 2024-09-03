@@ -1,0 +1,219 @@
+/* Restrict.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colmd6 {
+  width: 48%;
+}
+
+.colmd6 input{
+  width: 95%;
+  margin-bottom: 1%;
+  border-radius: 0%;
+}
+
+
+
+/* Form styling */
+
+.h1 {
+  color: white;
+  text-align: center;
+}
+
+.userprofilesdropdownform {
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+  padding: 3%;
+}
+
+
+
+.userprofilesdropdownheading {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.userprofilesdropdownselect {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.userprofilesdropdownselect option:hover{
+  background-color: #888;
+}
+
+.userprofilesdropdownbutton {
+  background-color:rgb(226, 73, 18);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 40%;
+}
+
+
+.userprofilesdropdownbutton:hover{
+  background-color: orangered;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+  font-weight: bold;
+}
+
+/* Popup styling */
+
+.userprofilesdropdownpopup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.popupsvg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.popuptext {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Right Column styling */
+
+.mainContainer {
+  padding: 20px;
+}
+
+.mainContainer h2{
+  color: white;
+  text-align: center;
+
+ 
+  padding-bottom: 10%;
+  margin-top: -3%;
+
+}
+
+.blockedMoviesContainer {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+  padding: 20px;
+  overflow-y: auto; /* Use overflow-y to enable vertical scrolling */
+  max-height: 330px; /* Set a max height for the container if needed */
+  margin-top: 9%;
+}
+
+
+
+.blockedMoviesContainer li {
+  color: white;
+  transition: background-color 0.3s, color 0.3s; /* Add transitions for background-color and color */
+  font-weight: bold;
+}
+
+/* Optional: Style the scrollbar */
+.blockedMoviesContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.blockedMoviesContainer::-webkit-scrollbar-thumb {
+  background-color: #888;
+
+}
+
+
+.blockedMoviesContainer ul:hover {
+  color: white;
+  
+}
+
+.blockedMoviesContainer li:hover {
+background-color: rgb(39, 38, 38);
+color: white;
+
+}
+
+/* Optional: Style the scrollbar */
+.blockedMoviesContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.blockedMoviesContainer::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.blockedMoviesContainer h2{
+  text-align: center;
+  color: white;
+}
+
+/* List and button styling */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  
+}
+
+.unblockButton {
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.unblockButton:hover{
+  background-color:orangered;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add box shadow on hover */
+}
+
+.popupButton {
+  margin-left: 10px;
+}
+
+
+
+
+.message{
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Media query for responsiveness */
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .colmd6 {
+    width: 100%;
+  }
+}
